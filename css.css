@@ -37,7 +37,7 @@ body{
     background-color: var(--skeleton-bg-1);
   }
   .skeleton__anim{
-      animation: 1s skeleton-loading ease-in-out infinite alternate;
+      animation: 3s skeleton-loading ease-in-out infinite alternate;
   }
   @keyframes skeleton-loading {
     0% {
