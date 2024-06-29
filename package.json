@@ -2,7 +2,7 @@
   "author": "Shunpocode",
   "name": "@shunpocode/skeleton",
   "description": "Ready Skeleton for your React project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "keywords": [
     "Skeleton",
