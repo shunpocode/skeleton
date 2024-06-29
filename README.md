@@ -44,4 +44,4 @@ Incoming props for elements:
     <Skeleton.Text anim={true} size={"footer"} br={true} />
 ```
 
-<video src="https://github.com/Shunpocode/skeleton/blob/React_skeleton/animationPreview.webm" controls />
+![preview]("./animationPreview.webm")
