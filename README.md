@@ -1,8 +1,47 @@
-# React + Vite
+# React Skeleton EN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ready Skeleton for your React project.
+Incoming props for elements:
 
-Currently, two official plugins are available:
+1. `<Skeleton.Avatar />`:
+   - `size={`"xxl", "xl", "md", "sm" - select one`}`
+2. `<Skeleton.Text />`:
+   - `size={`: "title", "body", "footer" - select one`}`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `br={`boolean`}`
+- `anim={`boolean`}`
+
+# RU
+
+Готовый Скелетон для вашего Реакт проекта
+Входящие пропсы для элементов:
+
+1. `<Skeleton.Avatar />`:
+   - `size={`"xxl", "xl", "md", "sm" - выбрать одно`}`
+2. `<Skeleton.Text />`:
+   - `size={`: "title", "body", "footer" - выбрать одно`}`
+
+- `br={`boolean`}`
+- `anim={`boolean`}`
+
+## Preview
+
+```jsx
+  <Skeleton.Avatar size={"md"} br={true} />
+  <Skeleton.Text size={"title"} br={true} />
+  <Skeleton.Text size={"body"} br={true} />
+  <Skeleton.Text size={"footer"} br={true} />
+```
+
+<img src="./noAnimPreview.png">
+
+- Animation skeleton
+
+```jsx
+    <Skeleton.Avatar anim={true} size={"md"} br={true} />
+    <Skeleton.Text anim={true} size={"title"} br={true} />
+    <Skeleton.Text anim={true} size={"body"} br={true} />
+    <Skeleton.Text anim={true} size={"footer"} br={true} />
+```
+
+<video src="./animationPreview.mp4" controls />
