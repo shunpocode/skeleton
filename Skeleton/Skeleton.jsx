@@ -1,3 +1,4 @@
+import "./skeleton.css";
 import React from "react";
 const SkeletonContext = React.createContext();
 
@@ -5,7 +6,9 @@ export default function Skeleton(props) {
   return (
     <SkeletonContext.Provider value={props}>
       <div
-        className={`skeleton${props.anim !== true ? "" : "__anim"} skeleton-${props.type} ${props.size}${props.br !== true ? "" : " sk-text-multi"}`}
+        className={`skeleton${props.anim !== true ? "" : "__anim"} skeleton-${
+          props.type
+        } ${props.size}${props.br !== true ? "" : " sk-text-multi"}`}
       ></div>
     </SkeletonContext.Provider>
   );
