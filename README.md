@@ -43,3 +43,4 @@ Incoming props for elements:
     <Skeleton.Text anim={true} size={"body"} br={true} />
     <Skeleton.Text anim={true} size={"footer"} br={true} />
 ```
+<img src="./animationPreview.gif" width="325px">
