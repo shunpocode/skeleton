@@ -13,25 +13,23 @@ export default function Skeleton(props) {
     </SkeletonContext.Provider>
   );
 }
+
+const sizes = {
+  avatar: ["xxl", "xl", "md", "sm"],
+  text: ["title", "body", "footer"],
+};
+
 function Avatar({ anim, br, size }) {
   var currentSize;
   if (size !== undefined) {
-    switch (size) {
-      case "xxl":
-        currentSize = "xxl";
-        break;
-      case "xl":
-        currentSize = "xl";
-        break;
-      case "md":
+    const count = sizes.avatar.length;
+    for (let i = 0; i < count; i++) {
+      if (size === sizes.avatar[i]) {
+        currentSize = sizes.avatar[i];
+        console.log(size === sizes.avatar[i], `${sizes.avatar[i]}`);
+      } else if (i === count) {
         currentSize = "md";
-        break;
-      case "sm":
-        currentSize = "sm";
-        break;
-      default:
-        currentSize = "md";
-        break;
+      }
     }
     size = `sk-avatar-${currentSize}`;
   } else {
@@ -42,20 +40,19 @@ function Avatar({ anim, br, size }) {
 function Text({ anim, br, size }) {
   var currentSize;
   if (size !== undefined) {
-    switch (size) {
-      case "title":
-        currentSize = "text__body";
-        break;
-      case "body":
-        currentSize = "text__body";
-        break;
-      case "footer":
-        currentSize = "footer";
-        break;
-      default:
-        break;
+    const count = sizes.text.length;
+
+    for (let i = 0; i < count; i++) {
+      if (size === sizes.text[i]) {
+        currentSize = sizes.text[i];
+        console.log(size === sizes.text[i], `${sizes.text[i]}`);
+      } else if (i === count) {
+        currentSize = "skeleton-text__title";
+      }
     }
-    size = `skeleton-${currentSize}`;
+    size = `skeleton-text__${currentSize}`;
+  } else {
+    size = `skeleton-text__title`;
   }
   return <Skeleton type={"text"} anim={anim} br={br} size={size} />;
 }
