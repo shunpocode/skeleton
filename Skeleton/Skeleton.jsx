@@ -26,7 +26,6 @@ function Avatar({ anim, br, size }) {
     for (let i = 0; i < count; i++) {
       if (size === sizes.avatar[i]) {
         currentSize = sizes.avatar[i];
-        console.log(size === sizes.avatar[i], `${sizes.avatar[i]}`);
       } else if (i === count) {
         currentSize = "md";
       }
@@ -45,7 +44,6 @@ function Text({ anim, br, size }) {
     for (let i = 0; i < count; i++) {
       if (size === sizes.text[i]) {
         currentSize = sizes.text[i];
-        console.log(size === sizes.text[i], `${sizes.text[i]}`);
       } else if (i === count) {
         currentSize = "skeleton-text__title";
       }
